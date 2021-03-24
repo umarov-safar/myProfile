@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;1,300&family=Ubuntu:wght@400;500;700&display=swap');
+
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+ }
+
+ .max-width{
+    max-width: 1300px;
+    padding: 0 80px;    
+    margin: auto;  
+}
+
+ /* Starting navbar styling */
+
+ .navbar{
+     position: fixed;
+     width: 100%;
+     /* background: crimson; */
+     padding: 15px 0;
+     font-family: "Ubuntu", sans-serif;
+     transition: all 0.3 ease;
+ }
+ .navbar.sticky{
+     padding: 16px 0;
+     background: crimson;
+ }
+
+ .navbar .max-width{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .navbar .logo a{
+     color: #fff;
+     font-size: 35px;
+     font-weight: 600;
+ }
+
+ .navbar .logo  a span {
+    color: crimson;
+    transition: all ease 0.4;
+}
+.navbar.sticky .logo  a span {
+    color: #fff;
+}
+ .navbar .menu  li {
+     display: inline-block;
+     list-style: none;
+ }
+ 
+
+ .navbar .menu  li a{
+     color: #fff;
+     font-size: 18px;
+     font-weight: 500;
+     margin-left: 25px;
+     transition: color 0.3 ease;
+ }
+
+
+ .navbar .menu  li a:hover {
+    color: crimson;
+}
+
+.navbar.sticky .menu  li a:hover{
+    color: black;
+}
+
+
+.navbar .menu-btn{
+    color: white;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+ /* Styling home section */
+.home {
+    display: flex;
+    background: url("img/banner.jpg") no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 500px;
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home  .home-content .text-1{ 
+    font-size: 27px;
+}
+
+ 
+.home  .home-content .text-2{ 
+    font-size: 75px ;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home  .home-content .text-3{ 
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+
+.home  .home-content .text-3 span{
+    color: crimson;
+}
+
+
+
+
+
+/* Responsive media query */
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 40px;    
+    }
+
+    .navbar .menu-btn{
+        display: block;
+        color: white;
+        z-index: 222222;
+    }
+
+    .navbar .menu{
+        position: fixed;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        text-align: center;
+    }
+
+    .navbar .menu-btn i.active::before{
+        content: "\f00d";
+
+    }
+
+    .navbar .menu.active{
+        left: 0;
+        transition: 1s ease all;
+    }
+
+
+    .navbar .menu li{
+        margin-top: 40px;
+        display: block;
+      
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    /* Text  first */
+    
+    .home  .home-content .text-1{ 
+    font-size: 25px;
+    }
+
+ 
+    .home  .home-content .text-2{ 
+    font-size: 70px ;
+
+    }
+
+    .home  .home-content .text-3{ 
+        font-size: 35px;
+
+    }
+}
+
+
+
+
+
+
+
+
