@@ -1,5 +1,10 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Gloria+Hallelujah&display=swap');
+/* 
+font-family: 'Dancing Script', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+ */
 
 *{
     margin: 0;
@@ -28,7 +33,7 @@ html{
 
 /* all similar content styling codes */
 section{
-    padding: 100px 0;
+    padding: 70px 0;
 }
 .max-width{
     max-width: 1300px;
@@ -99,10 +104,12 @@ section .title::after{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
+    font-family: 'Dancing Script', cursive;
 }
 .navbar .logo a span{
     color: rgb(3, 148, 184);
     transition: all 0.3s ease;
+    font-family: 'Dancing Script', cursive;
 }
 .navbar.sticky .logo a span{
     color: #fff;
@@ -197,7 +204,20 @@ section .title::after{
     color: rgb(71, 126, 139);
     font-weight: 500;
 }
-.home .home-content a{
+.home .home-content .sosials a {
+    display: inline-block;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 15px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid rgb(3, 148, 184);
+    transition: all 0.3s ease;
+
+}
+
+.home .home-content a.hire-me{
     display: inline-block;
     background: rgb(3, 148, 184);
     color: #fff;
@@ -298,7 +318,7 @@ section .title::after{
 }
 .hobby .serv-content .card i{
     font-size: 50px;
-    color: rgb(0, 80, 100);
+    color: rgb(0, 170, 212);
     transition: color 0.3s ease;
 }
 .hobby .serv-content .card:hover i{
@@ -309,6 +329,7 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
 
 /* skills section styling */
 
@@ -421,13 +442,17 @@ section .title::after{
 }
 
 /* teams section styling */
+
 .myWorks .title::after{
     content: "see projects";
 }
+
+
 .myWorks .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
+    min-height: 380px;
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
@@ -439,10 +464,18 @@ section .title::after{
 .myWorks .seeOnGit{
     padding: 10px;
     display: inline-block;
+    align-self: flex-end;
     color: rgb(3, 148, 184);
     margin-top: 7px;
     border: 1px solid rgb(3, 148, 184) ;
 }
+
+.myWorks .carousel .card:hover .box p .seeOnGit {
+    background: #222;
+    border-color: #000;
+    box-shadow: 0.2px 0.2px 17px black;
+} 
+
 
 .myWorks .carousel .card .box{
     display: flex;
@@ -460,8 +493,8 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 .myWorks .carousel .card img{
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid rgb(3, 148, 184);
@@ -492,6 +525,18 @@ section .title::after{
     background: rgb(0, 109, 136)!important;
 }
 
+#mygit{ 
+    text-align: center;
+}
+#mygit a{
+    margin-top: 20px;
+    color: rgb(2, 120, 150);
+    transition: all ease 0.3s;
+}
+#mygit a:hover {
+    border-radius: 3px;
+    box-shadow: 0.2px 0.2px 17px rgb(0, 195, 255);
+}
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
@@ -652,9 +697,16 @@ footer span a:hover{
     .home .home-content .text-3{
         font-size: 35px;
     }
-    .home .home-content a{
+    .home .home-content a.hire-me{
         font-size: 23px;
         padding: 10px 30px;
+    }
+    .home .home-content .sosials a {
+        padding: 7px;
+        border: 1px solid rgb(3, 148, 184);
+    }
+    .home .home-content .sosials a i {
+        font-size: 25px;
     }
     .max-width{
         max-width: 930px;
