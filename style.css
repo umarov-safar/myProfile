@@ -112,7 +112,7 @@ section .title::after{
     font-family: 'Dancing Script', cursive;
 }
 .navbar.sticky .logo a span{
-    color: #fff;
+    color: rgb(75, 75, 75);
 }
 .navbar .menu li{
     list-style: none;
@@ -158,6 +158,7 @@ section .title::after{
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
+    z-index: 100;
 }
 .scroll-up-btn.show{
     bottom: 30px;
@@ -679,6 +680,7 @@ footer span a:hover{
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
+        z-index: 999;
     }
     .navbar .menu.active{
         left: 0;
