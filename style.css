@@ -404,6 +404,13 @@ section .title::after{
     width: 80%;
 }
 .skills-content .right .mysql::before{
+    width: 80%;
+}
+.skills-content .right .react::before{
+    width: 50%;
+}
+
+.skills-content .right .laravel::before{
     width: 70%;
 }
 
